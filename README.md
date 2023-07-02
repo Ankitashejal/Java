@@ -1,6 +1,5 @@
 # Java 
 #DSA
-
 .Solving simple and advanced problems in java.
 
 Concepts:
