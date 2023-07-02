@@ -1,5 +1,5 @@
-public class advanced_patterns {
-public static void hollow_rectangle (int totRows,int totCols) {
+public class hollow_rectangle {
+public static void star (int totRows,int totCols) {
      for(int i=1;i<=totRows;i++) {
        for(int j=1;j<=totCols;j++) {
         if(i==1|| i==totRows|| j==1|| j==totCols) {
@@ -12,7 +12,7 @@ public static void hollow_rectangle (int totRows,int totCols) {
        }
       }
     public static void main(String args[]) {
-      hollow_rectangle (4,5);
+     star (4,5);
 
     }
 
