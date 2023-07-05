@@ -1,4 +1,6 @@
-public class halfpyramid2 {
+package Basic_Patterns;
+
+public class InvertedHalfPyramid {
     public static void inverted_rotated(int n){
         for(int i=1;i<=n;i++){
             //spaces
@@ -19,3 +21,5 @@ public class halfpyramid2 {
     }
     
 }
+
+

@@ -1,5 +1,7 @@
-public class Alphabets_pattern {
-    public static void main(String args[]){
+package Basic_Patterns;
+
+public class Characters_Pattern {
+        public static void main(String args[]){
     int n=5;
     char ch='A';
     for(int line=1;line<=n;line++){
