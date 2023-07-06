@@ -12,8 +12,8 @@ public static int search(int numbers[],int key)
 
 }
 public static void main(String args[]){
-    int numbers[]={2,4,6,8,10,12,16};
-    int key=(10);
+    int numbers[]= {2,4,6,8,10,12,16};
+    int key= (10);
     System.out.println("key is at index :" + key);
   }
 }
