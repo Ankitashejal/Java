@@ -2,15 +2,18 @@ package SelectionSorting ;
 
 public class Selectionsort {
   public static void selectionsort(int arr[]){
-    for (int i= 0; i<arr.length-1; i++){
+
+    int i,j,temp;
+    int n=arr.length;
+    for ( i= 0; i<n-1; i++){
          int minPos = i;
-         for( int j=i+1; j<arr.length; j++){
-           if (arr[minPos] < arr[j]){
+         for(  j=i+1; j<n; j++){
+           if (arr[minPos] > arr[j]){
             minPos = j;
            }
         }
-        //swap
-               int temp = arr[minPos];
+        //swap in outer loop
+               temp = arr[minPos];
                arr[minPos]= arr[i];
                arr[i] = temp;      
     }
