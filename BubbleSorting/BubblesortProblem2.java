@@ -20,14 +20,12 @@ public class BubblesortProblem2 {
                 }
             }
   
-            // If no two elements were
-            // swapped by inner loop, then break
+            
             if (swapped == false)
                 break;
         }
     }
   
-    // Function to print an array
     static void printArray(int arr[], int size)
     {
         int i;
@@ -36,7 +34,6 @@ public class BubblesortProblem2 {
         System.out.println();
     }
   
-    // Driver program
     public static void main(String args[])
     {
         int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
