@@ -1,39 +1,33 @@
 package SelectionSorting;
 
 public class selectionproblem2 {
-    void selection(int a[])  
-    {  
-        int i, j, small;  
-        int n = a.length;  
-        for (i = 0; i < n-1; i++)  
-        {  
-            small = i; 
-              
-            for (j = i+1; j < n; j++)  
-            if (a[j] < a[small])  
-                small = j;  
-    // Swap  
-        int temp = a[small];  
-        a[small] = a[i];  
-        a[i] = temp;  
-        }  
-      
-    }  
-    void printArr(int a[])  
-    {  
-        int n = a.length;  
-        for (int i = 0; i < n; i++)  
-        System.out.print(a[i] + " ");  
-    }  
-      
-        public static void main(String[] args) {  
-        int a[] = { 91, 49, 4, 19, 10, 21 };  
-       selectionproblem2 i1 = new selectionproblem2();  
-        System.out.println("\nBefore sorting array elements are - ");  
-        i1.printArr(a);  
-        i1.selection(a);  
-        System.out.println("\nAfter sorting array elements are - ");  
-        i1.printArr(a);  
-        System.out.println();  
-        }  
+    public static void dp(int arr[]){
+    for(int i=0; i<arr.length ; i++){
+    int minPos = i;
+        for(int j=i+1; j<arr.length; j++){
+        if(arr[minPos] < arr[j]){
+            minPos=j;
+        }
+        }
+        //swap
+        int temp = arr[i];
+        arr[i] = arr[minPos];
+        arr[minPos] = temp;
+    }
+    
+
+    }
+    public static void printArr(int arr[] ) {
+    for(int i=0; i<arr.length ; i++){
+        System.out.print(arr[i] + " ");
+    }
+        
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {3,6,2,1,8,7,4,5,3,1};
+        dp(arr); 
+        printArr(arr);
+    }
 }
+    

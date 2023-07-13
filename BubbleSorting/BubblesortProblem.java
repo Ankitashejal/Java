@@ -2,19 +2,20 @@ package BubbleSorting;
 
 public class BubblesortProblem {
     public static void bubbleSort(int arr[]){
-    int i,j;
+
     int n = arr.length;
-    for( turn=0; turn<=n-2; turn++){
-        for( j=0; j<=n-2-turn; j++){
-            if(arr[j]>arr[j+1]){
+    for( int turn=0; turn<n-1; turn++){
+        for( int j=0; j<n-1-turn; j++){
+            if(arr[j]<arr[j+1]){
                 //swap
-                temp = arr[j];
+                int temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
             }
         }
     }
 }
+
 
 
      public static void printArr(int arr[]) {
@@ -30,4 +31,5 @@ public class BubblesortProblem {
     }
 
     
+
 }
