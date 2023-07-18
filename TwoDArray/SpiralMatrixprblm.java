@@ -1,4 +1,4 @@
-package _2DArray;
+package TwoDArray;
 
 public class SpiralMatrixprblm {
 
