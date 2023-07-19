@@ -21,11 +21,17 @@ public class SpiralMatrixprblm {
 
         //bottom part
         for(int j=endCol-1 ; j>=startRow ; j--){
+            if(startRow == endRow){
+            break;
+            }
               System.out.print(matrix[endRow][j] +" ");
         }
 
         //left part
         for(int i=endRow-1 ; i>=startRow+1 ; i--){
+             if(startCol == endCol){
+            break;
+            }
             System.out.print(matrix[startCol][i] +" ");
         }
         startRow++;
@@ -40,7 +46,7 @@ public class SpiralMatrixprblm {
                           {5,6,7,8},
                           {9,10,11,12}, 
                           {13,14,15,16}};
-        printSpiral(matrix);                  
+        System.out.print(Spiral(matrix));                  
     }  
     
 }
