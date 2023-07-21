@@ -8,6 +8,18 @@ public class String {
         System.out.println(fullName.charAt(0));	
 
 }
+
+    public String toLowerCase() {
+        return null;
+    }
+
+    public int length() {
+        return 0;
+    }
+
+    public java.lang.String charAt(int i) {
+        return null;
+    }
 }
   
 
