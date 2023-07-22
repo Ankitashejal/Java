@@ -5,6 +5,6 @@ public class StringToLowercase {
     {
         java.lang.String s = "My Name is Ankita";
         java.lang.String s2 = s.toLowerCase();
-        System.out.println(s2);
+        System.out.println( java.lang.String s2);
     }
 }
