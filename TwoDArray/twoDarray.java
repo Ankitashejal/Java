@@ -2,8 +2,8 @@ package TwoDArray;
 
 public class twoDarray {
     public static void main(String[] args) {
-        int rows = 4;
-        int columns = 4;
+        int rows = 3;
+        int columns = 3;
  
         int[][] array = new int[rows][columns];
  
