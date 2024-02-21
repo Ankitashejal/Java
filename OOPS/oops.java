@@ -21,16 +21,31 @@ public class oops{
 //     }
 
 public static void main(String[] args) {
-    student s1 = new student("ankita",52);
-    System.out.println(s1.name);
+    student s1 = new student();
+    student s2 = new student("ankita");
+    student s3 = new student(123);
+
+    System.out.println(s1);
+    System.out.println(s2.name);
+    System.out.println(s3.roll);
+
+
 }
 
 static class student{
     String name;
     int roll;
 
-    student(String name, int roll) {
+    student(){
+        System.out.println("Constructor");
+    }
+
+    student(String name) {
         this.name = name;
+        // this.roll = roll;
+    }
+
+    student(int roll){
         this.roll = roll;
     }
 }
