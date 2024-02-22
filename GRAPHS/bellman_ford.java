@@ -34,8 +34,8 @@ class bellman_ford {
     }
 
     public static void main(String[] args) {
-        int V = 6;
-        int S = 1; // Adjusted the source vertex index
+        int V = 7;
+        int S = 0; // Adjusted the source vertex index
         ArrayList<ArrayList<Integer>> edges = new ArrayList<>() {
             {
                 add(new ArrayList<Integer>(Arrays.asList(1, 3, 5)));
