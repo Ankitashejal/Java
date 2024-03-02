@@ -47,7 +47,7 @@ public class salesman {
             {0,20,10,12},
             {20,0,15,11},
             {10,15,0,17},
-            {12,11,17,0},
+            {12,11,15,0},
         };
         int minCost = tsp(graph);
         System.out.println("Minimum cost for TSP: " + minCost);
