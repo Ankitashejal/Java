@@ -1,4 +1,21 @@
 public class basic {
+
+    //function to print recursively
+    public static void recursively(Node head){
+    if(head == null) return;
+    System.out.println(head.data+"");
+    recursively(head.next);
+
+    }
+
+    //function to print all the nodes    
+    public static void display(Node head){
+          Node temp = head;
+          while(temp != null){
+            System.out.println(temp.data+"");
+            temp = temp.next;
+          }
+    }
     
         public static class Node{
             int data; //value
@@ -23,13 +40,19 @@ public class basic {
            c.next = d;  //1>3>2>4 5
            d.next = e;  //1>3>2>4>5
     
-       Node temp = a;
-      for(int i=1;i<=5;i++){
-        System.out.println(temp.data+"");
-        temp = temp.next;
-      }
-        
-        
+    //    Node temp = a;
+    //   for(int i=1;i<=5;i++){                       will work only if we no thw size of node so we'll use while loop
+    //     System.out.println(temp.data+"");
+    //     temp = temp.next;
+    //   }
+
+    // //code for printing/displaying linked list
+    // while(temp != null){
+    //     System.out.println(temp.data+"");
+    //     temp = temp.next;
+    // }
+        display(a);
+        recursively(a);
         }
     }
     
