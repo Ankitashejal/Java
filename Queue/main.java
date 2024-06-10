@@ -10,6 +10,7 @@ public class main {
         queue.add(4);
         queue.add(6);
 
+        System.out.println(queue);
         System.out.println(queue.remove());
         System.out.println(queue.remove());
     }

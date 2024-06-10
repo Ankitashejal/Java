@@ -16,7 +16,6 @@ public class copystack {
             int x = sc.nextInt();
             st.push(x);
         }
-        
         System.out.println(st);
     }
 }
